@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/NotNetflix/static/css/main.4044b3cf.css",
+    "main.js": "/NotNetflix/static/js/main.6ceb5fa3.js",
+    "index.html": "/NotNetflix/index.html",
+    "main.4044b3cf.css.map": "/NotNetflix/static/css/main.4044b3cf.css.map",
+    "main.6ceb5fa3.js.map": "/NotNetflix/static/js/main.6ceb5fa3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4044b3cf.css",
+    "static/js/main.6ceb5fa3.js"
+  ]
+}

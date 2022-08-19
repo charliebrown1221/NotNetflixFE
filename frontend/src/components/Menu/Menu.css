@@ -1,0 +1,119 @@
+/* HTML CSSResult Skip Results Iframe
+EDIT ON */
+/* body, html{
+  height:100%;
+}
+body{
+  padding:0;
+  margin:0;
+}
+h1, p, li{
+  font-family:'helvetica neue', helvetica, arial, sans-serif;
+  color:#222;
+  margin:0 0 1em;
+}
+section li{
+  margin:0 0 10px;
+}
+h1{
+  font-size:2.5em;
+  font-weight:300;
+}
+p{
+  font-size:1em;
+  line-height:1.5em;
+} */
+.wrapper{
+  overflow:hidden;
+}
+.scroll{
+  float:left;
+  width:100%;
+  overflow-y: scroll;
+  height: 100%;
+}
+ 
+
+section{
+  padding:30px 30px 30px 80px;
+  -moz-transition:all 200ms ease-in;
+  -webkit-transition:all 200ms ease-in;
+  -o-transition:all 200ms ease-in;
+  transition:all 200ms ease-in;
+
+}
+nav{
+  position:fixed;
+  top:0;
+  left:0;
+  width:250px;
+  height:100%;
+  margin:0 0 0 -250px;
+  -moz-transition:all 200ms ease-in;
+  -webkit-transition:all 200ms ease-in;
+  -o-transition:all 200ms ease-in;
+  transition:all 200ms ease-in;
+}
+nav ul{
+  width:250px;
+  height:100%;
+  padding:0;
+  margin:0;
+  list-style:none;
+  background:#222;
+  overflow:hidden;
+}
+nav li{
+  margin:0;
+}
+nav a{
+  color:#fff;
+  font-size:1em;
+  font-family:'helvetica neue', helvetica, arial, sans-serif;
+  text-decoration:none;
+  display:block;
+  padding:12px 15px;
+  font-weight:300;
+  letter-spacing:2px;
+  border-bottom:1px solid #333;
+}
+nav a:hover{
+  background:#111;
+}
+.menu{
+  display:block;
+  font-family:'helvetica neue', helvetica, arial, sans-serif;
+  font-weight:700;
+  background:red;
+  box-shadow: 2px 2px 1px gray;
+  width:42px;
+  height:42px;
+  line-height:42px;
+  color:#fff;
+  text-align:center;
+  font-size:2em;
+  line-height:1.1em;
+  position:absolute;
+  top:191px;
+  left:250px;
+  -moz-transition:all 200ms ease-in;
+  -webkit-transition:all 200ms ease-in;
+  -o-transition:all 200ms ease-in;
+  transition:all 200ms ease-in;
+  z-index:500;
+}
+input[type="checkbox"]{
+  display:none;
+}
+input[type="checkbox"]:checked ~ nav{
+  margin:0;
+}
+input[type="checkbox"]:checked ~ label{
+  left:260px;
+}
+input[type="checkbox"]:checked ~ section{
+  -webkit-transform:translate3d(260px, 0, 0);
+  -moz-transform:translate3d(260px, 0, 0);
+  -o-transform:translate3d(260px, 0, 0);
+  transform:translate3d(260px, 0, 0);
+}

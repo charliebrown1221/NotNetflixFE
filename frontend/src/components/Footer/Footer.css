@@ -1,0 +1,16 @@
+footer {
+  border-top: 5px;
+  position: relative;
+  top: 300px;
+  bottom: 0;
+  font-size: 1.2rem;
+  left: 0;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+.tmdb{
+  position: relative;
+  right: 700px;
+  top: 40px;
+}

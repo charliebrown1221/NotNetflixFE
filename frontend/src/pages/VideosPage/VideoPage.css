@@ -1,0 +1,9 @@
+.user{
+    text-align: right;
+  }
+  .fav{
+    position: relative;
+    left: 500px;
+    bottom: 30px;
+    font-size: large;
+  }
