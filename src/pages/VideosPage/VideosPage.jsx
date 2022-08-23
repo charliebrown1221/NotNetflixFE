@@ -24,7 +24,7 @@ const VideoPage = (props) => {
 
     async function getData(getInfo){
         try {
-            let response = await axios.get(`https://api.themoviedb.org/3/search/movie?api_key=103bc152e61ef0926efa2aed8264d9e3&query=${getInfo}`)
+            let response = await axios.get(`https://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_tmdb_key}&query=${getInfo}`)
             console.log("get DB data: ", response.data.results)
             setGetMovieData(response.data.results)
             

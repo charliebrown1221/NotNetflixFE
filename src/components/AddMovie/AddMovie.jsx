@@ -15,8 +15,8 @@ const REGION ='us-east-1';
 
 
 AWS.config.update({
-    accessKeyId:    Key_Id,
-    secretAccessKey: Secret_Access_Key
+    accessKeyId:    process.env.REACT_APP_Key_Id,
+    secretAccessKey: process.env.REACT_APP_Secret_Access_Key
 })
 
 const AddMovie = (props) => {
