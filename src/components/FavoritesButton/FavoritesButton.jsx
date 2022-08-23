@@ -10,7 +10,7 @@ const FavoritesButton = (props) => {
 async function favoritedMovie(){
   console.log(props.movieId)
   try {
-      let response = await axios.post(`http://127.0.0.1:8000/api/favorites/add/${props.movieId}`,{}, {
+      let response = await axios.post(`https://cors-everywhere-me.herokuapp.com/http://NotNetflixBE-env.eba-ppyfwk2x.us-east-1.elasticbeanstalk.com/api/favorites/add/${props.movieId}`,{}, {
           headers: {
             Authorization: "Bearer " + token,
           },

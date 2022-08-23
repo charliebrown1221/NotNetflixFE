@@ -69,7 +69,7 @@ const setMovieDetails=(movie)=>{
             let newMovie = {...movieDataToUpload, "fileName":selectedFile.name}
            console.log(newMovie)
             try {
-                let response = await axios.post('http://127.0.0.1:8000/api/movies/add/',newMovie, {
+                let response = await axios.post('https://cors-everywhere-me.herokuapp.com/http://NotNetflixBE-env.eba-ppyfwk2x.us-east-1.elasticbeanstalk.com/api/movies/add/',newMovie, {
                     headers: {
                       Authorization: "Bearer " + token,
                     },

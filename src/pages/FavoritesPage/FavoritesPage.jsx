@@ -16,7 +16,7 @@ useEffect(() => {
 
 async function allFavoriteMovies(){
     try {
-        let response = await axios.get('http://127.0.0.1:8000/api/favorites/all/', {
+        let response = await axios.get('https://cors-everywhere-me.herokuapp.com/http://NotNetflixBE-env.eba-ppyfwk2x.us-east-1.elasticbeanstalk.com/api/favorites/all/', {
             headers: {
               Authorization: "Bearer " + token,
             },
@@ -33,7 +33,7 @@ async function allFavoriteMovies(){
 async function favoritedMovie(id){
     console.log(id)
     try {
-        let response = await axios.post(`http://127.0.0.1:8000/api/favorites/add/${id}`,{}, {
+        let response = await axios.post(`https://cors-everywhere-me.herokuapp.com/http://NotNetflixBE-env.eba-ppyfwk2x.us-east-1.elasticbeanstalk.com/api/favorites/add/${id}`,{}, {
             headers: {
               Authorization: "Bearer " + token,
             },

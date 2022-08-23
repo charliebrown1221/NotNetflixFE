@@ -34,7 +34,7 @@ const VideoPage = (props) => {
     }
     async function getAllMovies(){
         try {
-            let response = await axios.get('http://127.0.0.1:8000/api/movies/all/')
+            let response = await axios.get('https://cors-everywhere-me.herokuapp.com/http://NotNetflixBE-env.eba-ppyfwk2x.us-east-1.elasticbeanstalk.com/api/movies/all/')
             console.log("get BE Movie data: ", response.data)
             setGetAllMoviesData(response.data)
             

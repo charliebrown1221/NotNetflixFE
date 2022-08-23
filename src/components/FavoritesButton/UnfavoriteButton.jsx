@@ -13,7 +13,7 @@ const UnfavoriteButton = (props) => {
   async function UnfavoritedMovie(){
     console.log(props.movieId)
     try {
-        let response = await axios.delete(`http://127.0.0.1:8000/api/favorites/delete/${props.movieId}`, {
+        let response = await axios.delete(`https://cors-everywhere-me.herokuapp.com/http://NotNetflixBE-env.eba-ppyfwk2x.us-east-1.elasticbeanstalk.com/api/favorites/delete/${props.movieId}`, {
             headers: {
               Authorization: "Bearer " + token,
             },
